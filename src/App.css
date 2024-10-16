@@ -1,0 +1,194 @@
+
+.task-card
+{
+  min-width:20vw;
+  height: fit-content;
+  background-color: white;
+  border-color: darkgray;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 2vh;
+  padding: 10px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 15px;
+}
+.task-card h1
+{
+   font-size: 25px;
+   color: gray;
+   font-size: 14px;
+   font-weight: 600;
+   padding: 0;
+   margin: 0;
+}
+.task-card h3
+{
+   font-size: 12px;
+   padding: 0;
+   margin: 0;
+}
+.feature-request{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  height:fit-content;
+  margin-bottom: 10px;
+}
+
+.frtext,.iconic
+{
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 8px;
+  font-weight: 500;
+  color: rgb(134, 134, 134);
+}
+
+.iconic{
+  padding: 3px ;
+}
+
+.task-board{
+  width: 100%;
+  display: flex;
+  margin: 0 30px;
+  gap:50px;
+  margin-right: 35px;
+}
+.nav {
+  background-color: white;
+  padding: 0 25px;
+  height: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100vw; /* Ensures full width coverage */
+  position: fixed; /* Fix it at the top of the page */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Make sure it's above other content */
+}
+.filter-dropdown
+{
+  padding-top: 15px;
+}
+.filter-button
+{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+}
+.filter-options{
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+}
+.filter-group, .filter-order
+{
+  display: flex;
+  justify-content: space-between;
+}
+.filter-group, .filter-order label
+{
+  color: gray;
+  font-weight: 400;
+}
+.so{
+  width: 8vw;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 2px;
+}
+.subhead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 20vw;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.part2{
+  display: flex;
+  gap: 2px;
+}
+.part1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pc{
+  color: gray;
+}
+.task-board{
+  min-width: 100vw;
+  display: flex;
+}
+.tc-cont
+{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.tc-cont p
+{
+  padding-bottom:5px;
+}
+.pl{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 10px;
+  align-items: center;
+}
+.tb{
+  margin-top: 60px;
+}
+.pl{
+  margin-top: 0;
+}
+@media (max-width: 550px)
+{
+
+  .tb{
+    width: 96vw;
+    padding: 0;
+  }
+
+  .task-board
+  {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+  } 
+  .task-item{
+    min-width: 95vw;
+    margin: 0;
+  }
+  .ti{
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+  }
+  .subhead{
+    width: 85vw;
+  }
+  .so{
+    width: 25vw;
+  }
+}
